@@ -1,0 +1,1319 @@
+{
+	"info": {
+		"_postman_id": "b3671fd4-b773-4c0f-b890-e3f4428962bf",
+		"name": "MovieTime",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movietime/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movietime",
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movietime/api/v1/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movietime",
+						"api",
+						"v1",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Pamela\",\n    \"lastName\": \"Beasley\",\n    \"address\": \"4th Cross, 9th Street\",\n    \"city\": \"Scranton\",\n    \"mobile\": \"9999999992\",\n    \"email\": \"pam.beasley@abc.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movietime/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movietime",
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Jim\",\n    \"lastName\": \"Halpert\",\n    \"address\": \"5th Avenue, Main Street\",\n    \"city\": \"Scranton\",\n    \"mobile\": \"9999999991\",\n    \"email\": \"jim.halpert@abc.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 09:02:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Create user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Pamela\",\n    \"lastName\": \"Beasley\",\n    \"address\": \"4th Cross, 9th Street\",\n    \"city\": \"Scranton\",\n    \"mobile\": \"9999999992\",\n    \"email\": \"pam.beasley@abc.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 09:06:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Jim\",\n    \"lastName\": \"Halpert\",\n    \"address\": \"4th Avenue, Second Street\",\n    \"city\": \"Scranton\",\n    \"mobile\": \"9999999991\",\n    \"email\": \"jim.halpert@abc.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movietime/api/v1/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movietime",
+						"api",
+						"v1",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update user",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Jim\",\n    \"lastName\": \"Halpert\",\n    \"address\": \"4th Avenue, Second Street\",\n    \"city\": \"Scranton\",\n    \"mobile\": \"9999999991\",\n    \"email\": \"jim.halpert@abc.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 09:05:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Get all movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movietime/api/v1/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movietime",
+						"api",
+						"v1",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create theatre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"PVR\",\n    \"city\": \"Mumbai\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movietime/api/v1/theatres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movietime",
+						"api",
+						"v1",
+						"theatres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add shows for a theatre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"movie\": {\n            \"movieId\": 1,\n            \"name\": \"Pathaan\",\n            \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n        },\n        \"dateTime\": \"2023-02-25T15:00:00\",\n        \"price\": 350\n    },\n    {\n        \"movie\": {\n            \"name\": \"Ved\",\n            \"cast\": \"\\\"Riteish Deshmukh\\\", \\\"Genelia Desouza\\\"\"\n        },\n        \"dateTime\": \"2023-02-26T16:00:00\",\n        \"price\": 200\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movietime/api/v1/theatres/1/shows",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movietime",
+						"api",
+						"v1",
+						"theatres",
+						"1",
+						"shows"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add shows for a theatre",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"movie\": {\n            \"movieId\": 1,\n            \"name\": \"Pathaan\",\n            \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n        },\n        \"dateTime\": \"2023-02-25T15:00:00\",\n        \"price\": 350\n    },\n    {\n        \"movie\": {\n            \"name\": \"Ved\",\n            \"cast\": \"\\\"Riteish Deshmukh\\\", \\\"Genelia Desouza\\\"\"\n        },\n        \"dateTime\": \"2023-02-26T16:00:00\",\n        \"price\": 200\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/theatres/1/shows",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"theatres",
+								"1",
+								"shows"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 15:06:57 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Error response for a non-existent theatre",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"movie\": {\n            \"movieId\": 1,\n            \"name\": \"Pathaan\",\n            \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n        },\n        \"dateTime\": \"2023-02-25T15:00:00\",\n        \"price\": 350\n    },\n    {\n        \"movie\": {\n            \"name\": \"Ved\",\n            \"cast\": \"\\\"Riteish Deshmukh\\\", \\\"Genelia Desouza\\\"\"\n        },\n        \"dateTime\": \"2023-02-26T16:00:00\",\n        \"price\": 200\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/theatres/10/shows",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"theatres",
+								"10",
+								"shows"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 15:29:33 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorMessage\": \"No value present\",\n    \"callerURL\": \"/movietime/api/v1/theatres/10/shows\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Search shows",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movietime/api/v1/shows/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movietime",
+						"api",
+						"v1",
+						"shows",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search shows - No filter",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/shows/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"shows",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 12:54:12 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"showId\": 1,\n        \"theatre\": {\n            \"theatreId\": 1,\n            \"name\": \"Maratha Mandir\",\n            \"city\": \"Mumbai\"\n        },\n        \"movie\": {\n            \"movieId\": 1,\n            \"name\": \"Pathaan\",\n            \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n        },\n        \"dateTime\": \"2023-02-20T12:00:00\",\n        \"price\": 400\n    },\n    {\n        \"showId\": 2,\n        \"theatre\": {\n            \"theatreId\": 1,\n            \"name\": \"Maratha Mandir\",\n            \"city\": \"Mumbai\"\n        },\n        \"movie\": {\n            \"movieId\": 2,\n            \"name\": \"Shehzada\",\n            \"cast\": \"\\\"Karthik Aryan\\\", \\\"Kriti Sanon\\\"\"\n        },\n        \"dateTime\": \"2023-02-22T16:00:00\",\n        \"price\": 200\n    },\n    {\n        \"showId\": 3,\n        \"theatre\": {\n            \"theatreId\": 2,\n            \"name\": \"Urvashi Cinema\",\n            \"city\": \"Bangalore\"\n        },\n        \"movie\": {\n            \"movieId\": 1,\n            \"name\": \"Pathaan\",\n            \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n        },\n        \"dateTime\": \"2023-02-22T13:30:00\",\n        \"price\": 300\n    },\n    {\n        \"showId\": 4,\n        \"theatre\": {\n            \"theatreId\": 2,\n            \"name\": \"Urvashi Cinema\",\n            \"city\": \"Bangalore\"\n        },\n        \"movie\": {\n            \"movieId\": 3,\n            \"name\": \"Love Birds\",\n            \"cast\": \"\\\"Darling Krishna\\\", \\\"Milana Nagraj\\\"\"\n        },\n        \"dateTime\": \"2023-02-24T16:00:00\",\n        \"price\": 240\n    }\n]"
+				},
+				{
+					"name": "Search shows - by movieId",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"movieId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/shows/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"shows",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 12:54:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"showId\": 1,\n        \"theatre\": {\n            \"theatreId\": 1,\n            \"name\": \"Maratha Mandir\",\n            \"city\": \"Mumbai\"\n        },\n        \"movie\": {\n            \"movieId\": 1,\n            \"name\": \"Pathaan\",\n            \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n        },\n        \"dateTime\": \"2023-02-20T12:00:00\",\n        \"price\": 400\n    },\n    {\n        \"showId\": 3,\n        \"theatre\": {\n            \"theatreId\": 2,\n            \"name\": \"Urvashi Cinema\",\n            \"city\": \"Bangalore\"\n        },\n        \"movie\": {\n            \"movieId\": 1,\n            \"name\": \"Pathaan\",\n            \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n        },\n        \"dateTime\": \"2023-02-22T13:30:00\",\n        \"price\": 300\n    }\n]"
+				},
+				{
+					"name": "Search shows - by movieId & city",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"movieId\": 1,\n    \"city\": \"Mumbai\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/shows/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"shows",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 12:54:57 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"showId\": 1,\n        \"theatre\": {\n            \"theatreId\": 1,\n            \"name\": \"Maratha Mandir\",\n            \"city\": \"Mumbai\"\n        },\n        \"movie\": {\n            \"movieId\": 1,\n            \"name\": \"Pathaan\",\n            \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n        },\n        \"dateTime\": \"2023-02-20T12:00:00\",\n        \"price\": 400\n    }\n]"
+				},
+				{
+					"name": "Search shows - by movieId & date",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"movieId\": 1,\n    \"date\": \"2023-02-22\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/shows/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"shows",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 12:55:29 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"showId\": 3,\n        \"theatre\": {\n            \"theatreId\": 2,\n            \"name\": \"Urvashi Cinema\",\n            \"city\": \"Bangalore\"\n        },\n        \"movie\": {\n            \"movieId\": 1,\n            \"name\": \"Pathaan\",\n            \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n        },\n        \"dateTime\": \"2023-02-22T13:30:00\",\n        \"price\": 300\n    }\n]"
+				},
+				{
+					"name": "Search shows - All filters",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"movieId\": 1,\n    \"theatreId\": 2,\n    \"city\": \"Bangalore\",\n    \"date\": \"2023-02-22\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/shows/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"shows",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 12:56:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"showId\": 3,\n        \"theatre\": {\n            \"theatreId\": 2,\n            \"name\": \"Urvashi Cinema\",\n            \"city\": \"Bangalore\"\n        },\n        \"movie\": {\n            \"movieId\": 1,\n            \"name\": \"Pathaan\",\n            \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n        },\n        \"dateTime\": \"2023-02-22T13:30:00\",\n        \"price\": 300\n    }\n]"
+				},
+				{
+					"name": "Search shows after updating the theatreId",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/shows/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"shows",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 15:39:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"showId\": 1,\n        \"theatre\": {\n            \"theatreId\": 52,\n            \"name\": \"PVR\",\n            \"city\": \"Mumbai\"\n        },\n        \"movie\": {\n            \"movieId\": 1,\n            \"name\": \"Pathaan\",\n            \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n        },\n        \"dateTime\": \"2023-02-25T15:00:00\",\n        \"price\": 350\n    },\n    {\n        \"showId\": 2,\n        \"theatre\": {\n            \"theatreId\": 1,\n            \"name\": \"Maratha Mandir\",\n            \"city\": \"Mumbai\"\n        },\n        \"movie\": {\n            \"movieId\": 2,\n            \"name\": \"Shehzada\",\n            \"cast\": \"\\\"Karthik Aryan\\\", \\\"Kriti Sanon\\\"\"\n        },\n        \"dateTime\": \"2023-02-22T16:00:00\",\n        \"price\": 200\n    },\n    {\n        \"showId\": 3,\n        \"theatre\": {\n            \"theatreId\": 2,\n            \"name\": \"Urvashi Cinema\",\n            \"city\": \"Bangalore\"\n        },\n        \"movie\": {\n            \"movieId\": 1,\n            \"name\": \"Pathaan\",\n            \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n        },\n        \"dateTime\": \"2023-02-22T13:30:00\",\n        \"price\": 300\n    },\n    {\n        \"showId\": 4,\n        \"theatre\": {\n            \"theatreId\": 2,\n            \"name\": \"Urvashi Cinema\",\n            \"city\": \"Bangalore\"\n        },\n        \"movie\": {\n            \"movieId\": 3,\n            \"name\": \"Love Birds\",\n            \"cast\": \"\\\"Darling Krishna\\\", \\\"Milana Nagraj\\\"\"\n        },\n        \"dateTime\": \"2023-02-24T16:00:00\",\n        \"price\": 240\n    },\n    {\n        \"showId\": 52,\n        \"theatre\": {\n            \"theatreId\": 1,\n            \"name\": \"Maratha Mandir\",\n            \"city\": \"Mumbai\"\n        },\n        \"movie\": {\n            \"movieId\": 1,\n            \"name\": \"Pathaan\",\n            \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n        },\n        \"dateTime\": \"2023-02-25T15:00:00\",\n        \"price\": 350\n    },\n    {\n        \"showId\": 53,\n        \"theatre\": {\n            \"theatreId\": 1,\n            \"name\": \"Maratha Mandir\",\n            \"city\": \"Mumbai\"\n        },\n        \"movie\": {\n            \"movieId\": 52,\n            \"name\": \"Ved\",\n            \"cast\": \"\\\"Riteish Deshmukh\\\", \\\"Genelia Desouza\\\"\"\n        },\n        \"dateTime\": \"2023-02-26T16:00:00\",\n        \"price\": 200\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update shows for a theatre",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"showId\": 1,\n        \"movie\": {\n            \"movieId\": 1\n        },\n        \"dateTime\": \"2023-02-25T15:00:00\",\n        \"price\": 350\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movietime/api/v1/theatres/52/shows",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movietime",
+						"api",
+						"v1",
+						"theatres",
+						"52",
+						"shows"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update shows for a theatre",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"showId\": 1,\n        \"movie\": {\n            \"movieId\": 1\n        },\n        \"dateTime\": \"2023-02-25T15:00:00\",\n        \"price\": 350\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/theatres/52/shows",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"theatres",
+								"52",
+								"shows"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 15:39:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Get all theatres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movietime/api/v1/theatres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movietime",
+						"api",
+						"v1",
+						"theatres"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all theatres",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/theatres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"theatres"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 15:35:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"theatreId\": 1,\n        \"name\": \"Maratha Mandir\",\n        \"city\": \"Mumbai\"\n    },\n    {\n        \"theatreId\": 2,\n        \"name\": \"Urvashi Cinema\",\n        \"city\": \"Bangalore\"\n    },\n    {\n        \"theatreId\": 52,\n        \"name\": \"PVR\",\n        \"city\": \"Mumbai\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create a booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n        \"userId\": 1\n    },\n    \"show\": {\n        \"showId\": 1\n    },\n    \"seats\": [\n        \"K21, K22\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movietime/api/v1/bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movietime",
+						"api",
+						"v1",
+						"bookings"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create a booking",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": {\n        \"userId\": 1\n    },\n    \"show\": {\n        \"showId\": 1\n    },\n    \"seats\": [\n        \"K21, K22\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/bookings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"bookings"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "78"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 16:00:35 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Dear Jim, your ticket(s) for movie Pathaan for 2023-02-25T15:00 are confirmed."
+				}
+			]
+		},
+		{
+			"name": "Get all bookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movietime/api/v1/bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movietime",
+						"api",
+						"v1",
+						"bookings"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all bookings",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/bookings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"bookings"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 16:01:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"user\": {\n            \"userId\": 1,\n            \"firstName\": \"Jim\",\n            \"lastName\": \"Halpert\",\n            \"address\": \"5th Avenue, Main Street\",\n            \"city\": \"Scranton\",\n            \"mobile\": \"9999999991\",\n            \"email\": \"jim.halpert@abc.com\"\n        },\n        \"show\": {\n            \"showId\": 1,\n            \"theatre\": {\n                \"theatreId\": 52,\n                \"name\": \"PVR\",\n                \"city\": \"Mumbai\"\n            },\n            \"movie\": {\n                \"movieId\": 1,\n                \"name\": \"Pathaan\",\n                \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n            },\n            \"dateTime\": \"2023-02-25T15:00:00\",\n            \"price\": 350\n        },\n        \"seats\": [\n            \"K21, K22\"\n        ],\n        \"amount\": 350\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "NOTUSED - Create a threatre with shows",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"movieShows\": [\n        {\n            \"dateTime\": \"2023-02-24T13:30:00.000\",\n            \"price\": 300.00,\n            \"movie\": {\n                \"movieId\": 1,\n                \"name\": \"Pathaan\",\n                \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n            }\n        },\n        {\n            \"dateTime\": \"2023-02-22T16:00:00.000\",\n            \"price\": 240.00,\n            \"movie\": {\n                \"name\": \"Love Birds\",\n                \"cast\": \"\\\"Darling Krishna\\\", \\\"Milana Nagraj\\\"\"\n            }\n        }\n    ],\n    \"name\": \"Urvashi Cinema\",\n    \"city\": \"Bangalore\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movietime/api/v1/theatres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movietime",
+						"api",
+						"v1",
+						"theatres"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create a threatre with shows",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"movieShows\": [\n        {\n            \"dateTime\": \"2023-02-24T12:00:00.000\",\n            \"price\": 400.00,\n            \"movie\": {\n                \"name\": \"Pathaan\",\n                \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n            }\n        },\n        {\n            \"dateTime\": \"2023-02-22T16:00:00.000\",\n            \"price\": 240.00,\n            \"movie\": {\n                \"name\": \"Shehzada\",\n                \"cast\": \"\\\"Karthik Aryan\\\", \\\"Kriti Sanon\\\"\"\n            }\n        }\n    ],\n    \"name\": \"Maratha Mandir\",\n    \"city\": \"Mumbai\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/theatres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"theatres"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 09:56:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Create a threatre with shows",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"movieShows\": [\n        {\n            \"dateTime\": \"2023-02-24T13:30:00.000\",\n            \"price\": 300.00,\n            \"movie\": {\n                \"movieId\": 1,\n                \"name\": \"Pathaan\",\n                \"cast\": \"\\\"Shahrukh Khan\\\", \\\"Deepika Padukone\\\", \\\"John Abraham\\\"\"\n            }\n        },\n        {\n            \"dateTime\": \"2023-02-22T16:00:00.000\",\n            \"price\": 240.00,\n            \"movie\": {\n                \"name\": \"Love Birds\",\n                \"cast\": \"\\\"Darling Krishna\\\", \\\"Milana Nagraj\\\"\"\n            }\n        }\n    ],\n    \"name\": \"Urvashi Cinema\",\n    \"city\": \"Bangalore\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movietime/api/v1/theatres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movietime",
+								"api",
+								"v1",
+								"theatres"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 09:56:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
